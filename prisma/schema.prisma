@@ -1,0 +1,12 @@
+datasource db {
+  provider = "mysql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Country {
+  id   Int    @id @default(autoincrement())
+  name String
+}
